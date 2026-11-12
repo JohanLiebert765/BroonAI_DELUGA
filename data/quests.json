@@ -1,0 +1,65 @@
+{
+  "locations": ["siding", "ravenwood", "forest", "village", "tunnel"],
+  "stops": ["Blackmoor Siding", "Ravenwood Station", "Dead Forest", "Empty Village", "The Last Tunnel", "Hollowgate"],
+  "chapters": [
+    {"id": "siding", "title": "The Last Train", "number": "Chapter I",
+     "intro": ["This line was closed in sixty-one. So why is the boiler still warm?", "Nobody else is coming. If this thing moves, we move with it."],
+     "objectives": [
+       {"id": "s_note", "text": "Read the dispatcher's note in the passenger car", "flag": "doc_d_dispatch", "required": true},
+       {"id": "s_flash", "text": "Take a flashlight from the cargo car", "flag": "s_flash", "required": false},
+       {"id": "s_fuel", "text": "Load a fuel can into the firebox", "flag": "s_fueled", "required": true},
+       {"id": "s_go", "text": "Check the route map, then pull the control lever to depart", "flag": "left_0", "required": false}
+     ]},
+    {"id": "ravenwood", "title": "Ravenwood", "number": "Chapter II",
+     "intro": ["Ravenwood. The clock stopped, but the signal ahead is still red.", "We are not passing a red signal. Find a way to power it."],
+     "objectives": [
+       {"id": "rw_key", "text": "Find the warehouse key", "flag": "rw_key", "required": false},
+       {"id": "rw_fuel", "text": "Find the reserve fuel", "flag": "rw_fuel", "required": false},
+       {"id": "rw_power", "text": "Restore power to the signal system", "flag": "rw_power", "required": true},
+       {"id": "rw_docs", "text": "Find documents about the previous train", "flag": "doc_d_logbook", "required": false},
+       {"id": "rw_go", "text": "Return to the train and depart", "flag": "left_1", "required": false}
+     ]},
+    {"id": "forest", "title": "The Dead Forest", "number": "Chapter III",
+     "intro": ["The switch ahead is torn apart. Someone took the parts into the trees.", "Stay close. Something out there keeps pace with us."],
+     "objectives": [
+       {"id": "fr_camp", "text": "Discover the abandoned campsite", "flag": "fr_camp", "required": false},
+       {"id": "fr_parts", "text": "Find the parts of the railway switch", "flag": "fr_parts", "count": 2, "required": false},
+       {"id": "fr_mats", "text": "Gather spare materials", "flag": "fr_mats", "count": 3, "required": false},
+       {"id": "fr_switch", "text": "Restore the railway switch", "flag": "fr_switch", "required": true},
+       {"id": "fr_go", "text": "Return to the train and depart", "flag": "left_2", "required": false}
+     ]},
+    {"id": "village", "title": "The Empty Village", "number": "Chapter IV",
+     "intro": ["A connecting rod just let go. We are not leaving until the engine is fixed.", "Lights in the windows and not a soul. Listen... is that a radio?"],
+     "objectives": [
+       {"id": "vl_radio", "text": "Find a radio receiver", "flag": "vl_radio", "required": false},
+       {"id": "vl_code", "text": "Obtain the code to the locked cellar", "flag": "vl_code", "required": false},
+       {"id": "vl_docs", "text": "Find the important documents", "flag": "doc_d_confession", "required": false},
+       {"id": "vl_parts", "text": "Collect parts for the locomotive", "flag": "vl_parts", "count": 3, "required": false},
+       {"id": "vl_engine", "text": "Repair the locomotive engine", "flag": "vl_engine", "required": true},
+       {"id": "vl_go", "text": "Return to the train and depart", "flag": "left_3", "required": false}
+     ]},
+    {"id": "tunnel", "title": "The Last Tunnel", "number": "Chapter V",
+     "intro": ["Hollowgate tunnel. They welded a gate across the line.", "Whatever happened to the Vesper, it happened in there."],
+     "objectives": [
+       {"id": "tn_power", "text": "Restore power to the tunnel", "flag": "tn_power", "required": true},
+       {"id": "tn_parts", "text": "Find the parts of the gate mechanism", "flag": "tn_parts", "count": 2, "required": false},
+       {"id": "tn_gate", "text": "Open the passage", "flag": "tn_gate", "required": true},
+       {"id": "tn_truth", "text": "Discover the truth about the train", "flag": "doc_d_truth", "required": false},
+       {"id": "tn_go", "text": "Set the junction lever and drive to the end of the line", "flag": "left_4", "required": false}
+     ]}
+  ],
+  "radio": [
+    "...this is Ravenwood box to train thirteen... signal is at danger... repeat, at danger... why are you still moving...",
+    "...Northern Vale Railway regrets to announce the cancellation of all services beyond Ravenwood...",
+    "...forty-six tickets sold... forty-six... the conductor has counted them twice...",
+    "...next stop Hollowgate... all passengers please remain seated... next stop Hollowgate..."
+  ],
+  "endings": {
+    "terminus": {"title": "THE LAST STOP", "kind": "Good ending",
+      "text": ["The gate falls behind you. The junction holds for Hollowgate.", "You read the manifest aloud as the platform rises out of the dark. Forty-six names.", "At each name a figure stands, takes a suitcase from the rack, and steps down from the train.", "The conductor is the last. He touches his cap, and then there is only an empty uniform on the bench.", "The Vesper's fire goes out by itself. Grey light finds the end of the tunnel.", "The last route is complete. You walk out into the morning."]},
+    "bypass": {"title": "THE LOOP", "kind": "Alternative ending",
+      "text": ["You throw the junction for the service bypass. The Vesper climbs toward the air.", "Behind you, on the Hollowgate line, a red signal watches you go.", "The train slows at a field of wet grass. You jump down. Nobody follows.", "When you look back the rails are rust and weeds, and there has not been a train here in sixty years.", "You are alive. But on a November night, one year on, a whistle sounds across the valley.", "The Vesper is running again. It is still looking for a crew."]},
+    "passengers": {"title": "PASSENGERS", "kind": "Dark ending",
+      "text": ["You hold the junction for Hollowgate without knowing what waits there.", "The platform rises out of the dark. Nobody on it. Nobody gets off.", "The conductor walks the carriage slowly, counting. He stops beside you and holds out his hand.", "You find a ticket in your pocket. It has always been there.", "The manifest of train thirteen now lists more names than it did before.", "The Vesper pulls out of Hollowgate. Next stop: Blackmoor Siding."]}
+  }
+}

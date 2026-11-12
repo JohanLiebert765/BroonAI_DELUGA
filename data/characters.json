@@ -1,0 +1,10 @@
+[
+  {"id": "alex", "name": "Alex", "role": "All-round survivor", "bonus": "+20 maximum health", "max_hp": 120, "stamina": 1.0, "noise": 1.0, "repair": 1.0, "loot": 0.0,
+   "jacket": "3d5a34", "pants": "23262b", "skin": "c79a7a", "hair": "3a2a1c", "head": "cap", "headcolor": "2f4a2a", "shirt": "6a6a5a"},
+  {"id": "anna", "name": "Anna", "role": "Supply specialist", "bonus": "Often finds extra supplies in containers", "max_hp": 100, "stamina": 1.0, "noise": 1.0, "repair": 1.0, "loot": 0.6,
+   "jacket": "8a2424", "pants": "34466a", "skin": "d2a688", "hair": "1c1412", "head": "longhair", "headcolor": "1c1412", "shirt": "b0a898"},
+  {"id": "mark", "name": "Mark", "role": "Technical specialist", "bonus": "Repairs restore 50% more", "max_hp": 100, "stamina": 1.0, "noise": 1.0, "repair": 1.5, "loot": 0.0,
+   "jacket": "1e2c50", "pants": "3a4c6e", "skin": "c0957a", "hair": "2a2018", "head": "hair", "headcolor": "2a2018", "shirt": "c8c8c0"},
+  {"id": "victor", "name": "Victor", "role": "Scout", "bonus": "Sprints longer and moves quieter", "max_hp": 100, "stamina": 1.6, "noise": 0.6, "repair": 1.0, "loot": 0.0,
+   "jacket": "16161a", "pants": "1c1e22", "skin": "b88e74", "hair": "101010", "head": "hood", "headcolor": "16161a", "shirt": "2a2a2e"}
+]

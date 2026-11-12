@@ -1,0 +1,6 @@
+.godot/
+*.import.tmp
+build/
+.hoplite/
+*.tmp
+__pycache__/

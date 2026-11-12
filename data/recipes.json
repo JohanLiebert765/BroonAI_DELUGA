@@ -1,0 +1,10 @@
+[
+  {"id": "repair_kit", "result": "repair_kit", "count": 1, "station": "workbench", "needs": {"scrap": 2, "bolts": 1}, "tool": "hammer", "desc": "Scrap metal beaten into patches. Fixes the engine or running gear."},
+  {"id": "spare_part", "result": "spare_part", "count": 1, "station": "workbench", "needs": {"scrap": 2, "bolts": 2}, "tool": "wrench", "desc": "A fitted part for the brakes and running gear."},
+  {"id": "fuse", "result": "fuse", "count": 1, "station": "workbench", "needs": {"wires": 1, "scrap": 1}, "tool": "pliers", "desc": "Wire wound on a metal cap. Restores a dead circuit."},
+  {"id": "battery", "result": "battery", "count": 1, "station": "workbench", "needs": {"electronics": 2}, "tool": "", "desc": "A cell built from salvaged electronics."},
+  {"id": "flashlight_plus", "result": "flashlight_plus", "count": 1, "station": "workbench", "needs": {"flashlight": 1, "battery": 2}, "tool": "screwdriver", "desc": "A brighter torch that drains slower."},
+  {"id": "engine_part", "result": "engine_part", "count": 1, "station": "workbench", "needs": {"components": 2, "scrap": 1}, "tool": "wrench", "desc": "A machined engine component."},
+  {"id": "medkit", "result": "medkit", "count": 1, "station": "medical", "needs": {"med_supplies": 2}, "tool": "", "desc": "A proper first aid kit."},
+  {"id": "bandage", "result": "bandage", "count": 1, "station": "medical", "needs": {"cloth": 2}, "tool": "", "desc": "Clean cloth rolled into a dressing."}
+]
